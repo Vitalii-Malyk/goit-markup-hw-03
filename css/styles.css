@@ -1,0 +1,240 @@
+/* основний колір тексту (маленький) #434455; */
+/* другий колір тексту (заголовки)  #2E2F42;*/
+/* білий колір #FFFFFF;*/
+/* акцент #4D5AE5;*/
+/* другий колір фону #F4F4FD */
+/* колір фону футера #2E2F42 */
+/* Основний шрифт Roboto Medium */
+
+:root {
+  --accent-color: #4d5ae5;
+  --main-color-text: #434455;
+  --second-color-text: #2e2f42;
+  --main-bg-color: #ffffff;
+  --second-bg-color: #f4f4fd;
+}
+
+body {
+  background-color: var(--main-bg-color);
+  color: var(--main-color-text);
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+}
+.list {
+  list-style: none;
+}
+
+/* logo */
+
+.link,
+.logo {
+  text-decoration: none;
+  font-style: normal;
+}
+.logo .accent {
+  color: var(--second-color-text);
+}
+.logo.link {
+  font-family: Raleway, sans-serif;
+  color: var(--accent-color);
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+/*ХЕДЕР*/
+
+/* навігація сайту */
+
+.site-nav .link {
+  color: var(--second-color-text);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: #404bbf;
+}
+
+/* адресса */
+
+.addres-list .contacts {
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--main-color-text);
+}
+.addres-list .contacts {
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--main-color-text);
+}
+
+.addres-list .contacts:hover,
+.addres-list .contacts:focus {
+  color: #404bbf;
+}
+
+/*МАЙН*/
+
+/* Герой */
+.hero {
+  background-color: var(--second-color-text);
+}
+
+.hero-title {
+  color: var(--main-bg-color);
+  background-color: var(--second-color-text);
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+.hero .button {
+  font-family: inherit;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  background-color: var(--accent-color);
+  color: var(--main-bg-color);
+}
+
+.hero .button:focus,
+.hero .button:hover {
+  background-color: #404bbf;
+}
+
+/* Секції */
+
+.section-title {
+  color: var(--second-color-text);
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+.feature-list .title {
+  letter-spacing: 0.02em;
+}
+.team-list .title {
+  letter-spacing: 0.02em;
+}
+.section .title {
+  letter-spacing: 0.02em;
+}
+
+/* /* features */
+.feature-list .title {
+  color: var(--second-color-text);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.feature-list .text {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Our Team */
+.team-list .title {
+  color: var(--second-color-text);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+}
+.section.section-team {
+  background-color: var(--second-bg-color);
+}
+.team-list .cards {
+  background-color: var(--main-bg-color);
+}
+
+.job-title {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* ПОРТФОЛІО */
+
+/* work examples */
+.work-examples .title {
+  color: var(--second-color-text);
+}
+.filters .button {
+  color: var(--accent-color);
+  background-color: #e7e9fc;
+}
+
+.filters .button:hover,
+.filters .button:focus {
+  color: var(--main-bg-color) ff;
+  background-color: #404bbf;
+}
+
+/* ФУТЕР */
+
+.text-footer {
+  font-size: 16px;
+  line-height: 1.5;
+}
+.section-footer .logo {
+  color: var(--accent-color);
+}
+.section-footer .accent {
+  color: var(--second-bg-color);
+}
+
+.text-footer {
+  font-size: 16px;
+  line-height: 24px;
+  color: #f4f4fd;
+  background-color: var(--second-color-text);
+}
+.section-footer {
+  background-color: var(--second-color-text);
+}
+
+.filters .button {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--accent-color);
+  background-color: var(--second-bg-color);
+  cursor: pointer;
+}
+
+.filters .button:hover,
+.filters .button:focus {
+  color: var(--main-bg-color);
+  background-color: #404bbf;
+}
+
+.work-examples .title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--second-color-text);
+}
+.link > .filter-sections {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
