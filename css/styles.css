@@ -15,6 +15,21 @@
   --hover-focus-color: #404bbf;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+
 body {
   background-color: var(--main-bg-color);
   color: var(--main-color-text);
@@ -24,6 +39,14 @@ body {
 }
 .list {
   list-style: none;
+}
+
+.container {
+  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  outline: 2px solid tomato;
 }
 
 .visually-hidden {
@@ -58,9 +81,14 @@ body {
   text-transform: uppercase;
 }
 
-/*ХЕДЕР*/
+/*!----------------------------ХЕДЕР-------------------------------*/
 
-/* навігація сайту */
+.header {
+  padding-top: 24px;
+  border-bottom: 1px solid #e7e9fc;
+}
+
+/*!-------------------------навігація сайту----------------------- */
 
 .site-nav .link {
   color: var(--second-color-text);
@@ -73,7 +101,7 @@ body {
   color: var(--hover-focus-color);
 }
 
-/* адресса */
+/*!---------------------------адресса------------------------------ */
 
 .addres-list .contacts {
   font-style: normal;
@@ -98,6 +126,8 @@ body {
 /* Герой */
 .hero {
   background-color: var(--second-color-text);
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 
 .hero-title {
@@ -107,6 +137,8 @@ body {
   line-height: 1.07;
   text-align: center;
   letter-spacing: 0.02em;
+  padding-bottom: 48px;
+  margin: 0 auto;
 }
 
 .hero .button {
@@ -116,8 +148,8 @@ body {
   font-style: normal;
   font-size: 16px;
   line-height: 1.5;
-  display: flex;
-  align-items: center;
+  display: block;
+  margin: 0 auto;
   letter-spacing: 0.04em;
   cursor: pointer;
   background-color: var(--accent-color);
@@ -162,6 +194,20 @@ body {
   line-height: 1.5;
 }
 
+.section-features {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+/* What are we doing */
+.section-work {
+  padding-bottom: 120px;
+}
+
+.section-work .section-title {
+  margin-bottom: 72px;
+}
+
 /* Our Team */
 .team-list .title {
   color: var(--second-color-text);
@@ -171,6 +217,8 @@ body {
 }
 .section.section-team {
   background-color: var(--second-bg-color);
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .team-list .cards {
   background-color: var(--main-bg-color);
@@ -216,9 +264,19 @@ body {
   line-height: 24px;
   color: #f4f4fd;
   background-color: var(--second-color-text);
+  width: 264px;
+  margin-top: 18px;
 }
 .section-footer {
   background-color: var(--second-color-text);
+  padding-bottom: 100px;
+  padding-top: 100px;
+}
+
+/* section-portfolio */
+.section-portfolio {
+  padding-top: 96px;
+  padding-bottom: 120px;
 }
 
 .filters .button {
@@ -230,6 +288,9 @@ body {
   color: var(--accent-color);
   background-color: var(--second-bg-color);
   cursor: pointer;
+}
+.filters {
+  margin-bottom: 72px;
 }
 
 .filters .button:hover,
