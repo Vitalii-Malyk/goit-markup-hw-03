@@ -51,7 +51,7 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
 }
 
 .visually-hidden {
@@ -227,7 +227,6 @@ body {
   font-size: 16px;
   line-height: 1.5;
   margin-top: 8px;
-  width: 264px;
 }
 
 .section-features {
@@ -238,6 +237,9 @@ body {
 .feature-list {
   display: flex;
   gap: 24px;
+}
+.feature-list li {
+  width: 264px;
 }
 
 /* What are we doing */
@@ -259,8 +261,6 @@ body {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-  margin-top: 32px;
-  margin-bottom: 8px;
   text-align: center;
 }
 .section.section-team {
@@ -268,8 +268,12 @@ body {
   padding-top: 120px;
   padding-bottom: 120px;
 }
-.team-list .cards {
+.team-list > .cards {
   background-color: var(--main-bg-color);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
+  height: 380px;
 }
 
 .job-title {
@@ -277,14 +281,25 @@ body {
   line-height: 1.5;
   text-align: center;
 }
+
 .team-list {
   display: flex;
+  justify-content: center;
   gap: 24px;
 }
 .section-team .section-title {
   margin-bottom: 72px;
 }
 
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+  margin-top: 32px;
+}
 /* ПОРТФОЛІО */
 
 /* work examples */
@@ -368,6 +383,7 @@ body {
   letter-spacing: 0.02em;
   color: var(--second-color-text);
   margin-top: 32px;
+  margin-left: 16px;
 }
 .link > .filter-sections {
   font-size: 16px;
@@ -375,13 +391,20 @@ body {
   letter-spacing: 0.02em;
   color: #434455;
   margin-top: 8px;
+  margin-bottom: 32px;
+  margin-left: 16px;
 }
 
 .work-examples {
   display: flex;
   flex-wrap: wrap;
+  flex-basis: calc(100% / 3 - 24px);
+  margin-top: -48px;
+  margin-left: -24px;
 }
 
 .work-items {
-  min-width: calc(((100%-2 * 24px)) / 3);
+  /* outline: 1px solid tomato; */
+  margin-left: 24px;
+  margin-top: 48px;
 }
